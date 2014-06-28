@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   <!-- Maps --> 
+   <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      var my_position = new google.maps.LatLng(32.986456, -96.755730);
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        
+        var map_options = {
+          center: my_position,
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(map_canvas, map_options);
+      var iconBase = 'map_pin_icon.png';
+      var marker = new google.maps.Marker({
+         position: my_position,
+         map: map,
+         //icon: iconBase
+         title:"My Location"
+      });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Vivek Gunasekaran | My Personal page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+   
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Vivek Gunasekaran.</h1>
+            <h3><span> I am a graduate student and an aspiring Software Engineer. <br>Let's start scrolling and learn more about me</span>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="http://facebook.com/vivekgcbe"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="http://www.linkedin.com/in/vivekgunasekaran/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="http://instagram.com/vivek_gunasekaran"><i class="fa fa-instagram"></i></a></li>
+               
+               
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>There were oceans on all sides, vast and alluring. I had to choose one to dive deep. Every
+
+fascination I have had since childhood, right from the working of everyday gadgets, to graphics in movies 
+
+and the working of robots, has its roots in the vast field of Computer Science. The breathtaking view of 
+
+the ocean of Computer Science, stretching farther than the rest, filled with exciting challenges in the 
+
+form of twists and turns, appealed much more than the rest, and I was drawn towards it.
+            </p>
+            <p>I am a graduate student in Computer Science at The University of Texas at Dallas. I did my undergraduate degree in Amrita Vishwa Vidyapeetham, India. My academic projects and graduate coursework helped me gain significant knowledge in Software Development. I always have an interest in learning and working on new and emerging technologies.</p>
+            <div class="row">
+
+
+               <div class="columns download">
+                  <p>
+                     <a href="https://www.dropbox.com/s/dsgkrnrhbndef38/New%20Resume.docx" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>The University of Texas at Dallas </h3>
+                  <p class="info">Master of Science in Computer Science <span>&bull;</span> <em class="date">Expected to graduate in May 2015</em></p>
+
+                  <p>Coursework:<br>Advanced Computer Networks, Database Design, Design and Analysis of Computer Algorithms, Wireless Networks, and Cryptography
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Amrita Vishwa Vidyapetham - Amrita School of Engineering</h3>
+                  <p class="info">Bachelor of Technology in Computer Science and Engineering <span>&bull;</span> <em class="date">May 2013</em></p>
+                  <p>Coursework:<br>Software Project Management, Mobile and Wireless Networks, Computer Language Engineering, Computer Graphics and Visualization, Principles of Digital Image Processing, Introduction to Soft Computing, Operations Research, Introduction to Cryptography, Information Security, Intelligent Systems, Software Design and Modelling, Formal Languages and Automata, Net-Centric Programming, Software Engineering, Database Management Systems, Computer Networks, Structure and Interpretation of Computer Programs, Operating Systems, Data Structures and Algorithms.
+                  </p>
+
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Ericsson India Global Services Pvt. Ltd</h3>
+                  <p class="info">Intern<span>&bull;</span> <em class="date">June 2012 - July 2012</em></p>
+
+                  <p>
+                  Assisted in developing a portal to handle the customer service reports of the Software Delivery Team. The portal was developed in Drupal with the help of PHP and MySQL</p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="bars">
+
+				   <ul class="skills">
+
+            <li><em>Languages :</em><p>C, C++, Java, Python</p></li>
+            <li><em>Web Technologies :</em><p>Ruby, JavaScript, PHP, HTML, CSS</p></li>
+            <li><em>Database :</em><p>MySQL, Mongo DB</p></li>
+            <li><em>Operating System :</em><p>UNIX, Linux, Windows XP/7/8</p></li> 
+            <li><em>Version Control :</em><p>Git, SVN</p></li>
+            <li><em>Tools :</em> <p>Android SDK, Eclipse, Visual Studio</p></li>     
+					   
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+
+
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Live as if you were to die tomorrow.
+                              Learn as if you were to live forever.
+                           </p>
+                           <cite>Mahatma Gandhi</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>It's not about how to achieve your dreams. It's about how to lead your life. If you lead your life the right way, the karma will take care of itself. The dreams will come to you.
+                           </p>
+                           <cite>Randy Pausch</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="ten columns">
+
+                  <h1>Contact me</h1>
+
+            </div>
+
+         </div>
+
+         </div>
+         <div class="eight columns">
+            <div id="map_canvas">
+               <h2>My Location</h2>
+            </div>
+         </div>
+         <div class="row">
+
+            
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Email</h4>
+					   <p class="address">
+                     <a href="mailto:vivek.gunasekaran@utdallas.edu?Subject=Hello" target="_blank">
+						   vivek.gunasekaran@utdallas.edu</a><br>
+                  <br>      
+                  <h4>Phone</h4>
+						   <span>(972) 900-2789</span>
+					   </p>
+
+				   </div>
+
+               
+
+            </aside>
+
+         
+   </section> <!-- Contact Section End-->
+   
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <ul class="social-links">
+               <li><a href="http://facebook.com/vivekgcbe"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="http://www.linkedin.com/in/vivekgunasekaran/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="http://instagram.com/vivek_gunasekaran"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+
+</body>
+
+</html>
